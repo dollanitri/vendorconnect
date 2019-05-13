@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Vendor Connect</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar autocomplete type="on"></ion-searchbar>
+
+  <ion-list no-lines>
+
+    <ion-item-sliding *ngFor="let vendorproduct of vendorproducts">
+
+      <ion-item>
+
+        <p>{{vendorproduct.productid}}</p>
+        <p>{{vendorproduct.displayname}}</p>
+        <p>{{vendorproduct.manufacturer}}</p>
+        <p>{{vendorproduct.source}}</p>
+
+    </ion-item-sliding>
+
+  </ion-list>
+  
+</ion-content>
